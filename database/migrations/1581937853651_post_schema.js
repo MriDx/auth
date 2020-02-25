@@ -10,7 +10,7 @@ class PostSchema extends Schema {
       table.string('title')
       table.string('description')
       table.integer('user_id').unsigned()
-      table.foreign('user_id').references('Users.id').onDelete('cascade')
+      table.foreign('user_id').references('users.id').onDelete('cascade')
       table.timestamps()
     })
   }
